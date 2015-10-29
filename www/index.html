@@ -3,8 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 </head>
 <body>
-	hello
+	<iframe  name="Stack" src="http://61.63.107.172:9999/divide/" frameborder="0" scrolling="no" id="iframe" onload='javascript:resizeIframe(this);'></iframe>
 </body>
+
+
 </html>
